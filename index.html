@@ -32,7 +32,7 @@
     <hr /><br>
     <table>
       <tr>
-        <th><a href='/root/'><img src="img/disk.ico" alt="HDD" height="16" width="16"> Files</a></th>
+        <th><a href='root'><img src="img/disk.ico" alt="HDD" height="16" width="16"> Files</a></th>
         <th><a id="osjs" target="_blank"><img src="img/osjs.png" alt="OS.js" height="16" width="16"> OS.js</a></th>
       </tr>
     </table>
@@ -48,7 +48,9 @@
     </table>
   </body>
   <script type="text/javascript">
-    document.getElementById('osjs').href=window.location.origin+':8000';
+    if (window.location.origin != 'lunartiger.github.io') {
+      document.getElementById('osjs').href=window.location.origin+':8000';
+    }
   </script>
   <footer>
     <p style="text-align:center">Nobody exists on purpose,<br>nobody belongs anywhere,<br>everybody is going to die.</p>
