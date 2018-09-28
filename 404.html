@@ -30,7 +30,7 @@
 		<p>Were you looking for one of these places?</p>
 		<table>
 			<tr>
-				<th><a href='/'>Lunar's File Server</a></th>
+				<th><a id='home' href='/'>Lunar's File Server</a></th>
 			</tr>
 			<tr>
 				<th><a id='osjs'>Lunar's OS.js</a></th>
@@ -51,6 +51,11 @@
 		<p style="text-align:center">Nobody exists on purpose,<br>nobody belongs anywhere,<br>everybody is going to die.</p>
 	</footer>
 	<script type="text/javascript">
-		document.getElementById('osjs').href=window.location.origin+':8000';
+		if (window.location.origin !== 'lunartiger.github.io') {
+			document.getElementById('osjs').href=window.location.origin+':8000';
+		}
+		if (window.location.origin == 'lunartiger.github.io') {
+			document.getElementById('home').href='/fs-mirror';
+		}
 	</script>
 </html>
