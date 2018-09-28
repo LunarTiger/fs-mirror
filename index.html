@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="robots" content="noindex">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+      @font-face {font-family: ComicSans;src: url(comic.ttf);}
+      body {text-align:center;background-color: #000000;color: #00ff00;font-family: ComicSans;}
+      footer {position: fixed;left: 0;bottom: 0;width: 100%;background-color: #000000;color: #00ff00;border-top: 1px dashed #006900;}
+      button {background-color: #000000;color: #00FF00;padding: 10px;border-radius: 10px;}
+      a:link {color: #00ff00;text-decoration:none;}
+      a:visited {color: #00ff00;text-decoration:none;}
+      a:hover {color: #00bf00;text-decoration:none;}
+      a:active {color: #008900;text-decoration:none;}
+      h1 {color: #006900;}
+      h2 {color: #006900;}
+      h3 {color: #006900;}
+      h4 {color: #006900;}
+      h5 {color: #006900;}
+      h6 {color: #00ff00;}
+      table {border: 4px solid #00be00;margin-left:auto;margin-right:auto;}
+      th {padding: 10px;border: 3px solid #00be00;text-align:center}
+      hr {border-top: 1px dashed #006900;border-bottom: 0;border-left: 0;border-right: 0;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar's File Server</title>
+    <meta name="Lunar's File Server" content="Lunar's File Server">
+  </head>
+  <body>
+    <h1>Welcome to Lunar's<br>File Server</h1>
+    <hr /><br>
+    <table>
+      <tr>
+        <th><a href='/root/'><img src="/img/disk.ico" alt="HDD" height="16" width="16"> Files</a></th>
+        <th><a id="osjs" target="_blank"><img src="/img/osjs.png" alt="OS.js" height="16" width="16"> OS.js</a></th>
+      </tr>
+    </table>
+    <br>
+    <p>In order to get an account on OS.js,<br>please contact me <a href='https://lunartiger.github.io/contact' style='text-decoration:underline;'>here</a></p>
+    <hr style="height:100px; visibility:hidden;" />
+    <hr style="width:50%" />
+    <table>
+      <tr>
+        <th><a href='https://lunartiger.github.io/projects'>Lunar's Homepage</a></th>
+        <th><a href='https://lunartiger.github.io/althub'>Altspace Teleport Hub</a></th>
+      </tr>
+    </table>
+  </body>
+  <script type="text/javascript">
+    document.getElementById('osjs').href=window.location.origin+':8000';
+  </script>
+  <footer>
+    <p style="text-align:center">Nobody exists on purpose,<br>nobody belongs anywhere,<br>everybody is going to die.</p>
+  </footer>
+</html>
