@@ -46,6 +46,12 @@
 		<hr style="height:50px; visibility:hidden;" />
 	</body>
 	<footer>
-		<p><a href="/">Home</a>&nbsp;/&nbsp;<a href="/root">Root</a></p>
+		<p><a id='home' href="/">Home</a>&nbsp;/&nbsp;<a id='root' href="/root">Root</a></p>
 	</footer>
+	<script>
+    if (window.location.origin == 'lunartiger.github.io') {
+      document.getElementById('home').href='/fs-mirror';
+      document.getElementById('root').href='/fs-mirror/root'
+    }
+  </script>
 </html>
